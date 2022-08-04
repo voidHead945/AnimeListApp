@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainFragment"
+    android:tag="MAIN_FRAGMENT">
+
+
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:hint="Search Anime"
+        android:textColorHint="@color/white"
+        android:layout_margin="12dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="textImeMultiLine"></EditText>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        tools:listitem="@layout/content_item" />
+</FrameLayout>
